@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSC44NDPLQ"></script>
@@ -11,51 +11,46 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Update the title -->
-    <title>Agentic Workflows Workshop</title>
+    <title>Workshop de Agentic Workflows</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="alternate" hreflang="en" href="https://copilot-dev-days.github.io/agentic-workflows-workshop/">
     <link rel="alternate" hreflang="pt-BR" href="https://copilot-dev-days.github.io/agentic-workflows-workshop/pt_BR/">
     <link rel="alternate" hreflang="es" href="https://copilot-dev-days.github.io/agentic-workflows-workshop/es/">
     <link rel="alternate" hreflang="x-default" href="https://copilot-dev-days.github.io/agentic-workflows-workshop/">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="light-theme.css">
-    <script src="theme-toggle.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../light-theme.css">
+    <script src="../theme-toggle.js"></script>
 </head>
 <body>
     <div style="position:fixed;top:1rem;right:1rem;z-index:1000;display:flex;gap:0.5rem;align-items:center;">
         <div class="locale-picker" id="localePicker">
-            <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">🌐</button>
-            <ul role="listbox" aria-label="Language">
-                <li role="option" data-locale="en" aria-selected="true" class="active">🇬🇧 English</li>
+            <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Selecionar idioma">🌐</button>
+            <ul role="listbox" aria-label="Idioma">
+                <li role="option" data-locale="en" aria-selected="false">🇬🇧 English</li>
                 <li role="option" data-locale="es" aria-selected="false">🇪🇸 Español</li>
-                <li role="option" data-locale="pt-BR" aria-selected="false">🇧🇷 Português (Brasil)</li>
+                <li role="option" data-locale="pt-BR" aria-selected="true" class="active">🇧🇷 Português (Brasil)</li>
             </ul>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
+        <button class="theme-toggle" onclick="toggleTheme()">☀️ Claro</button>
     </div>
     <section class="hero">
         <div class="container">
-            <!-- TODO: Update badge, title, subtitle -->
-            <div class="hero-badge">🤖 Hands-On Workshop</div>
-            <h1>Agentic Workflows with GitHub Copilot</h1>
-            <p class="hero-subtitle">Learn to build and deploy agentic workflows using <code>gh aw</code>. Automate daily digests, pull Hacker News stories as GitHub issues, and wire up a ChatOps slash command — all from the command line.</p>
+            <div class="hero-badge">🤖 Workshop Prático</div>
+            <h1>Agentic Workflows com GitHub Copilot</h1>
+            <p class="hero-subtitle">Aprenda a criar e implantar agentic workflows usando <code>gh aw</code>. Automatize resumos diários, importe histórias do Hacker News como issues no GitHub e configure um comando slash ChatOps — tudo pela linha de comando.</p>
             <div class="hero-cta">
-                <a href="step.html?step=readme" class="btn btn-primary">🚀 Start Workshop</a>
-                <!-- TODO: Update the GitHub repo URL -->
-                <a href="https://github.com/copilot-dev-days/agentic-workflows-workshop" class="btn btn-secondary" target="_blank">⭐ GitHub Repo</a>
+                <a href="step.html?step=readme" class="btn btn-primary">🚀 Iniciar Workshop</a>
+                <a href="https://github.com/copilot-dev-days/agentic-workflows-workshop" class="btn btn-secondary" target="_blank">⭐ Repositório GitHub</a>
             </div>
             <div class="stats">
                 <div class="stat">
-                    <!-- TODO: Update duration -->
                     <div class="stat-value">~75min</div>
-                    <div class="stat-label">Duration</div>
+                    <div class="stat-label">Duração</div>
                 </div>
                 <div class="stat">
-                    <!-- TODO: Update exercise count -->
                     <div class="stat-value">3</div>
-                    <div class="stat-label">Exercises</div>
+                    <div class="stat-label">Exercícios</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">1</div>
@@ -67,28 +62,27 @@
 
     <section class="features">
         <div class="container">
-            <h2 class="section-title">What You'll Learn</h2>
-            <!-- TODO: Update feature cards -->
+            <h2 class="section-title">O que Você Vai Aprender</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Quick Start</h3>
-                    <p>Bootstrap the <code>gh aw</code> CLI extension and initialise Agentic Workflows in your repository in minutes.</p>
+                    <h3>Início Rápido</h3>
+                    <p>Inicie a extensão CLI <code>gh aw</code> e configure Agentic Workflows no seu repositório em minutos.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📰</div>
-                    <h3>Automated Digests</h3>
-                    <p>Create scheduled workflows that surface top Hacker News stories as formatted GitHub issues every morning.</p>
+                    <h3>Resumos Automatizados</h3>
+                    <p>Crie workflows agendados que destacam as principais histórias do Hacker News como issues formatadas no GitHub todas as manhãs.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
-                    <h3>ChatOps Slash Commands</h3>
-                    <p>Trigger agentic workflows directly from issue comments using slash commands — no context-switching required.</p>
+                    <h3>Comandos Slash ChatOps</h3>
+                    <p>Acione agentic workflows diretamente de comentários em issues usando comandos slash — sem trocar de contexto.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔍</div>
-                    <h3>Sentiment Analysis</h3>
-                    <p>Use AI to analyse the sentiment of Hacker News story comments and get a structured breakdown posted back to GitHub.</p>
+                    <h3>Análise de Sentimento</h3>
+                    <p>Use IA para analisar o sentimento dos comentários de histórias do Hacker News e obtenha um resumo estruturado postado de volta no GitHub.</p>
                 </div>
             </div>
         </div>
@@ -96,54 +90,53 @@
 
     <section class="workshop">
         <div class="container">
-            <h2 class="section-title">Workshop Parts</h2>
-            <!-- TODO: Update workshop steps to match your workshop/ markdown files -->
+            <h2 class="section-title">Partes do Workshop</h2>
             <div class="parts-list">
                 <a href="step.html?step=readme" class="part-card">
                     <div class="part-number">📚</div>
                     <div class="part-content">
-                        <h3>Workshop Overview</h3>
-                        <p>Introduction and learning objectives</p>
+                        <h3>Visão Geral do Workshop</h3>
+                        <p>Introdução e objetivos de aprendizagem</p>
                     </div>
                     <span class="part-time">5 min</span>
                 </a>
                 <a href="step.html?step=00-prereqs" class="part-card">
                     <div class="part-number">00</div>
                     <div class="part-content">
-                        <h3>Prerequisites</h3>
-                        <p>Install and configure gh aw</p>
+                        <h3>Pré-requisitos</h3>
+                        <p>Instalar e configurar gh aw</p>
                     </div>
                     <span class="part-time">10 min</span>
                 </a>
                 <a href="step.html?step=01-quick-start" class="part-card">
                     <div class="part-number">01</div>
                     <div class="part-content">
-                        <h3>Quick Start</h3>
-                        <p>gh aw init + daily issue/PR digest</p>
+                        <h3>Início Rápido</h3>
+                        <p>gh aw init + resumo diário de issues/PRs</p>
                     </div>
                     <span class="part-time">20 min</span>
                 </a>
                 <a href="step.html?step=02-hn-digest" class="part-card">
                     <div class="part-number">02</div>
                     <div class="part-content">
-                        <h3>Hacker News Digest</h3>
-                        <p>Automated daily HN stories as GitHub issues</p>
+                        <h3>Resumo do Hacker News</h3>
+                        <p>Histórias diárias automatizadas do HN como issues no GitHub</p>
                     </div>
                     <span class="part-time">20 min</span>
                 </a>
                 <a href="step.html?step=03-chatops" class="part-card">
                     <div class="part-number">03</div>
                     <div class="part-content">
-                        <h3>ChatOps Sentiment Analysis</h3>
-                        <p>/hn-sentiment slash command via ChatOps pattern</p>
+                        <h3>Análise de Sentimento ChatOps</h3>
+                        <p>Comando slash /hn-sentiment via padrão ChatOps</p>
                     </div>
                     <span class="part-time">20 min</span>
                 </a>
                 <a href="step.html?step=04-review" class="part-card">
                     <div class="part-number">04</div>
                     <div class="part-content">
-                        <h3>Review & Next Steps</h3>
-                        <p>Recap and continue your learning</p>
+                        <h3>Revisão e Próximos Passos</h3>
+                        <p>Recapitulação e continue aprendendo</p>
                     </div>
                     <span class="part-time">5 min</span>
                 </a>
@@ -153,8 +146,7 @@
 
     <section class="prereqs">
         <div class="container">
-            <h2 class="section-title">Prerequisites</h2>
-            <!-- TODO: Update prerequisites -->
+            <h2 class="section-title">Pré-requisitos</h2>
             <div class="prereqs-grid">
                 <div class="prereq-item">
                     <span class="prereq-check">✓</span>
@@ -166,7 +158,7 @@
                 </div>
                 <div class="prereq-item">
                     <span class="prereq-check">✓</span>
-                    <span>gh aw extension</span>
+                    <span>Extensão gh aw</span>
                 </div>
                 <div class="prereq-item">
                     <span class="prereq-check">✓</span>
@@ -179,14 +171,14 @@
     <footer>
         <div class="container">
             <div class="footer-links">
-                <!-- TODO: Update footer links -->
-                <a href="https://github.com/copilot-dev-days/agentic-workflows-workshop" target="_blank">GitHub Repository</a>
-                <a href="https://code.visualstudio.com/docs/copilot/overview" target="_blank">Copilot Docs</a>
+                <a href="https://github.com/copilot-dev-days/agentic-workflows-workshop" target="_blank">Repositório GitHub</a>
+                <a href="https://code.visualstudio.com/docs/copilot/overview" target="_blank">Docs do Copilot</a>
                 <a href="https://github.com/github/awesome-copilot" target="_blank">Awesome Copilot</a>
             </div>
-            <p class="footer-credit">Built with 💜 by the GitHub Copilot Team</p>
+            <p class="footer-credit">Feito com 💜 pelo time do GitHub Copilot</p>
         </div>
     </footer>
+
     <script>
     (function(){
       var match=location.pathname.match(/\/(pt_BR|es)\//);

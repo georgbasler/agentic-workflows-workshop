@@ -1,3 +1,5 @@
+🌐 [Português (Brasil)](README.pt_BR.md) | [Español](README.es.md)
+
 # Agentic Workflows Workshop
 
 This repository contains the hands-on workshop for **Agentic Workflows with GitHub Copilot**. Visit the published site or follow the workshop steps in the `workshop/` directory.
